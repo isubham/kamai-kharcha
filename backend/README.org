@@ -6,9 +6,10 @@ manage different entities
 
 - [ ] users [0/3]
   role - this will be used to store users info.
-  fields - name, email, password, profile_pic
+  fields - first name, last name, email, password
   endpoints:- 
-  - [ ] POST /users/
+  - [ ] POST /users/ (sachin)
+    save the user details have fields 
   - [ ] GET /users/<id>
   - [ ] GET /users/<search-string>
   - [ ] PUT /users/<id>
