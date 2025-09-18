@@ -1,0 +1,51 @@
+* kharcha-kamai backend services
+
+** Responsibilities [0/7]
+
+manage different entities
+
+- [ ] users [0/3]
+  role - this will be used to store users info.
+  fields - name, email, password, profile_pic
+  endpoints:- 
+  - [ ] POST /users/
+  - [ ] GET /users/<id>
+  - [ ] GET /users/<search-string>
+  - [ ] PUT /users/<id>
+
+
+- [ ] groups [0/3]
+  role - to maintain groups like family and friends. 
+  fields - members : [{user_id, role}]
+  role like - admin, read, write
+   
+  - [ ] POST /groups/
+  - [ ] GET /groups/<id>
+  - [ ] PUT /groups/<id>
+
+
+- [ ] kharcha [0/3]
+  role - to record expense
+  fields - date, amount, user_id, account_id, kaam_id, description
+  - [ ] POST /kharcha/
+  - [ ] GET /kharcha/<id>
+  - [ ] PUT /kharcha/<id>
+
+
+- [ ] kamai [0/3]
+  fields - date, amount, user_id, account_id, kaam_id, description
+  - [ ] POST /kamai/
+  - [ ] GET /kamai/<id>
+  - [ ] PUT /kamai/<id>
+
+
+- [ ] kaam [0/0]
+- [ ] analytics [0/0] 
+
+# Endpoints
+
+- users/
+
+
+- groups/
+fields - name, email, password, profile_pic
